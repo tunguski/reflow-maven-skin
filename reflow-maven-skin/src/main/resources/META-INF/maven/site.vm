@@ -604,7 +604,7 @@
 	<hr />
 	<div class="row">
 #* 			*##end##
-		<div class="span4">
+		<div class="col-md-4">
 #*			*##if ( $tocSidebar )#*
 				*##tocSidebarContent ()
 #*			*##end##
@@ -622,10 +622,10 @@
 	<div class="row">
 #* 				*##if ( $hasSidebar || $tocSidebar )#*
 					// has a sidebar - take part width
-*#		<div class="span8">
+*#		<div class="col-md-8">
 #*	 			*##else#*
 					// no sidebar - take full width
-*#		<div class="span12">
+*#		<div class="col-md-12">
 #* 				*##end##
 			<div class="body-content">
 #* 			*##else#*
@@ -673,12 +673,12 @@
  *###
 #macro ( thumbs $colCount $subsections )##
 	<div class="row thumbnail-row">
-		<div class="span12">
+		<div class="col-md-12">
 #*	*##set ( $colCount = $convert.toNumber($colCount) )##
 			<ul class="thumbnails">
 #*	*##set ( $colSpan = 12 / $colCount )#*
 	*##foreach ( $subsection in $subsections )##
-				<li class="span$colSpan">
+				<li class="col-md-$colSpan">
 					<div class="thumbnail">
 #* 		// bring the first image (possibly with a link) to the top of the subsection
 		// (to have a thumbnail with leading image)
@@ -710,7 +710,7 @@
 #*	*##set ( $colSpan = 12 / $colCount )#*
 	*##set ( $i = 1 )#*
 	*##foreach ( $subsection in $subsections )##
-		<div class="span$colSpan">
+		<div class="col-md-$colSpan">
 			$subsection
 		</div>
 #*		*##set ( $mod = $i % $colCount )#*
@@ -785,7 +785,7 @@
 #macro ( tocSidebar )#*
 
 	*##if ( !$tocSidebarAdded )##
-		<div class="span4">
+		<div class="col-md-4">
 #*			*##tocSidebarContent ()
 		</div>
 #*	*##end##
@@ -879,16 +879,16 @@
 	*##if ( $item.items && $item.items.size() > 0 )#*
 
 		*##if ( $item.collapse == false )#*
-			*##set ( $collapseClass = "icon-chevron-down" )#*
+			*##set ( $collapseClass = "glyphicon glyphicon-chevron-down" )#*
 		*##else#*
 			// By default collapsed
-			*##set ( $collapseClass = "icon-chevron-right" )#*
+			*##set ( $collapseClass = "glyphicon glyphicon-chevron-right" )#*
 		*##end#*
 
 		// check if one of the subtree items is the current one, if so, autoexpand
 		*##set ( $displayTree = false )#displayTree ( $item )#*
 		*##if ( $active || $displayTree )#*
-			*##set ( $collapseClass = "icon-chevron-down" )#*
+			*##set ( $collapseClass = "glyphicon glyphicon-chevron-down" )#*
 		*##end#*
 
 	*##end## /item with children
@@ -897,7 +897,7 @@
 ##
 							#fullLink ( $currentLink $item.name $item.target $item.img $item.position $item.alt $item.border $item.width $item.height $collapseClass)
 
-#*	*##if ( $item.items && $item.items.size() > 0 && $collapseClass == "icon-chevron-down" )##
+#*	*##if ( $item.items && $item.items.size() > 0 && $collapseClass == "glyphicon glyphicon-chevron-down" )##
 							<ul class="nav nav-list">
 #*		*##foreach ( $subitem in $item.items )#*
 			*##menuItem ( $subitem )
@@ -1024,7 +1024,7 @@
 		*##if ( $navColIndex == $menuColumns.size() - 1 )#*
 			*##set ( $navSpan = $lastNavSpan )#*
 		*##end##
-				<div class="span$navSpan bottom-nav">
+				<div class="col-md-$navSpan bottom-nav">
 #*					*##listMenu ( $menuCol )
 				</div>
 #*		*##set ( $navColIndex = $navColIndex + 1 )#*
@@ -1171,7 +1171,7 @@
 			*##set ( $divId = $funSplit.get(1) )#*
 			*##set ( $imgId = $funSplit.get(3) )#*
 			*##set ( $replBefore = '<button title="Information" class="btn btn-link btn-small" type="button" data-toggle="collapse" data-target="#' )#*
-			*##set ( $replAfter = '"><i class="icon-info-sign"></i></button>' )#*
+			*##set ( $replAfter = '"><i class="glyphicon glyphicon-info-sign"></i></button>' )#*
 			*##call ( $iconReplacements.put("#$imgId", "$replBefore$divId$replAfter") )#*
 			*##set ( $collapseSelector = "${collapseSelector}, #$divId" )#*
 		*##end#*
@@ -1268,15 +1268,15 @@
 	*##if ( !$config.not( "bootstrapIcons" ) )#*
 		// Bootstrap Icons are enabled by default, so check for false and negate
 		*##depsCollapse ()#*
-		*##set ( $iconReplacements = { 'img[src$=images/add.gif]' : '<i class="icon-plus"></i>',
-										'img[src$=images/remove.gif]' : '<i class="icon-remove"></i>',
-										'img[src$=images/fix.gif]' : '<i class="icon-wrench"></i>',
-										'img[src$=images/update.gif]' : '<i class="icon-refresh"></i>',
-										'img[src$=images/icon_help_sml.gif]' : '<i class="icon-question-sign"></i>',
-										'img[src$=images/icon_success_sml.gif]' : '<i class="icon-ok"></i>',
-										'img[src$=images/icon_warning_sml.gif]' : '<i class="icon-warning-sign"></i>',
-										'img[src$=images/icon_error_sml.gif]' : '<i class="icon-exclamation-sign"></i>',
-										'img[src$=images/icon_info_sml.gif]' : '<i class="icon-info-sign"></i>' } )#*
+		*##set ( $iconReplacements = { 'img[src$=images/add.gif]' : '<i class="glyphicon glyphicon-plus"></i>',
+										'img[src$=images/remove.gif]' : '<i class="glyphicon glyphicon-remove"></i>',
+										'img[src$=images/fix.gif]' : '<i class="glyphicon glyphicon-wrench"></i>',
+										'img[src$=images/update.gif]' : '<i class="glyphicon glyphicon-refresh"></i>',
+										'img[src$=images/icon_help_sml.gif]' : '<i class="glyphicon glyphicon-question-sign"></i>',
+										'img[src$=images/icon_success_sml.gif]' : '<i class="glyphicon glyphicon-ok"></i>',
+										'img[src$=images/icon_warning_sml.gif]' : '<i class="glyphicon glyphicon-warning-sign"></i>',
+										'img[src$=images/icon_error_sml.gif]' : '<i class="glyphicon glyphicon-exclamation-sign"></i>',
+										'img[src$=images/icon_info_sml.gif]' : '<i class="glyphicon glyphicon-info-sign"></i>' } )#*
 		*##set ( $bodyContent = $htmlTool.replaceAll( $bodyContent, $iconReplacements ) )#*
 	*##end#*
 
@@ -1387,8 +1387,8 @@
 		*##set ( $bootstrapCssCombined = false )#*
 		*##set ( $bootstrapJsPath = "$resourcePath/js" )#*
 	*##else#*
-		*##set ( $bootstrapVersion = "2.3.2" )#*
-		*##set ( $bootswatchVersion = "2.3.2" )#*
+		*##set ( $bootstrapVersion = "3.3.1" )#*
+		*##set ( $bootswatchVersion = "3.3.1" )#*
 
 		// use Bootstrap theme from BootstrapCDN (loaded over network)
 		*##if ( $config.theme && $config.theme.getValue().startsWith("bootswatch-") )#*
@@ -1398,18 +1398,18 @@
 		*##end#*
 
 		*##if ( $bootswatchTheme )#*
-			*##set ( $bootstrapCssPath = "$protocol//netdna.bootstrapcdn.com/bootswatch/${bootswatchVersion}/$bootswatchTheme" )#*
-			// use Bootstrap 2.3.1 for responsive CDN, because 2.3.2 is not available (CSS did not change 2.3.1 -> 2.3.2)
-			*##set ( $bootstrapCssResponsivePath = "$protocol//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css" )#*
+			*##set ( $bootstrapCssPath = "$protocol//bootswatch.com/$bootswatchTheme" )#*
+			// use Bootstrap 3.3.1 for responsive CDN, because 3.3.1 is not available (CSS did not change 3.3.1 -> 3.3.1)
+			*##set ( $bootstrapCssResponsivePath = "$protocol//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/" )#*
 			*##set ( $bootstrapCssCombined = false )#*
 		*##else#*
-			*##set ( $bootstrapCssPath = "$protocol//netdna.bootstrapcdn.com/twitter-bootstrap/${bootstrapVersion}/css" )#*
-			// since Bootstrap 2.3.2, the CDN hosts a combined version of default Bootstrap
+			*##set ( $bootstrapCssPath = "$protocol//maxcdn.bootstrapcdn.com/bootstrap/${bootstrapVersion}/css" )#*
+			// since Bootstrap 3.3.1, the CDN hosts a combined version of default Bootstrap
 			*##set ( $bootstrapCssCombined = true )#*
 		*##end#*
 
 
-		*##set ( $bootstrapJsPath = "$protocol//netdna.bootstrapcdn.com/twitter-bootstrap/${bootstrapVersion}/js" )#*
+		*##set ( $bootstrapJsPath = "$protocol//maxcdn.bootstrapcdn.com/bootstrap/${bootstrapVersion}/js" )#*
 
 	*##end##
 
@@ -1480,13 +1480,13 @@
 ##	// put page and project slugs as classes to the <body>. This allows page-specific CSS customizations.
 	<body class="page-$config.fileId project-$config.projectId" data-spy="scroll" data-offset="60" data-target="${esc.h}toc-scroll-target">
 
-		<div class="navbar navbar-fixed-top#if ( $config.is( "navbarInverse" ) ) navbar-inverse#end">
-			<div class="navbar-inner">
+		<div class="navbar navbar-default navbar-fixed-top#if ( $config.is( "navbarInverse" ) ) navbar-inverse#end">
+			<div class="">
 				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target="#top-nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+					<a class="btn navbar-btn" data-toggle="collapse" data-target="#top-nav-collapse">
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
 					</a>
 #*
 
@@ -1501,14 +1501,14 @@
 
 		*##if ( $config.brand.getChild( 'href' ) )#*
 			*##currentFileRelativeLink ( $config.brand.getChild( 'href' ).getValue() )##
-					<a class="brand" href="$currentFileRelativeLink">$brandName</a>
+					<a class="navbar-brand" href="$currentFileRelativeLink">$brandName</a>
 #*		*##else##
-					<div class="brand">$brandName</div>
+					<div class="navbar-brand">$brandName</div>
 #*		*##end#*
 	*##end#*
 
 *###
-					<div class="nav-collapse collapse" id="top-nav-collapse">
+					<div class="collapse navbar-collapse" id="top-nav-collapse">
 						<ul class="nav pull-right">
 #*
 
@@ -1552,7 +1552,7 @@
 	*##if  ( $hasBanner )##
 	<div class="jumbotron subhead">
 		<div class="row" id="banner">
-			<div class="span12">
+			<div class="col-md-12">
 				<div class="pull-left">
 #*					*##banner ( $decoration.bannerLeft "bannerLeft" )
 				</div>
@@ -1622,15 +1622,15 @@
 			*##set ( $tocOffsetTop = "250" )#*
 		*##end#*
 *###
-		<div id="toc-bar" class="navbar" data-spy="affix" data-offset-top="$tocOffsetTop">
-			<div class="navbar-inner">
+		<div id="toc-bar" class="navbar navbar-default" data-spy="affix" data-offset-top="$tocOffsetTop">
+			<div class="">
 				<div id="toc-scroll-target" class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target="#toc-nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+					<a class="btn navbar-btn" data-toggle="collapse" data-target="#toc-nav-collapse">
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
 					</a>
-					<div class="nav-collapse collapse" id="toc-nav-collapse">
+					<div class="collapse navbar-collapse" id="toc-nav-collapse">
 						<ul id="toc" class="nav">
 #*							// display Table of Contents in a top bar
 							*##topToc ( $tocItems )
@@ -1651,9 +1651,9 @@
 	// non-sectioned body - just output it all	*###
 	<div class="row">
 #*		*##if ( $tocSidebar )##
-		<div class="span8">
+		<div class="col-md-8">
 #*		*##else##
-		<div class="span12">
+		<div class="col-md-12">
 #*		*##end##
 			<div class="body-content">
 #*				*##bodyWithHeader ( $bodyContent )
@@ -1686,7 +1686,7 @@
 		*##if ( $bottomSpanRemainder < 0 )#*
 			*##set ( $bottomSpanRemainder = 1 )#*
 		*##end##
-				<div class="span$bottomSpanRemainder bottom-description">
+				<div class="col-md-$bottomSpanRemainder bottom-description">
 #*		*##if ( $config.bottomDescription.getChildCount() > 0 )##
 					#htmlContent ( $config.bottomDescription.getChildren() )
 #*		*##elseif ( $config.bottomDescription.getAttribute("quote") && 'false' == $config.bottomDescription.getAttribute("quote") )#*
@@ -1723,7 +1723,7 @@
 
 	<div class="container subfooter">
 		<div class="row">
-			<div class="span12">
+			<div class="col-md-12">
 				<p class="pull-right"><a href="#">Back to top</a></p>
 				<p class="copyright">Copyright &copy;#copyright (). All Rights Reserved.</p>
 #*	*##if ( $datePosition == "bottom" || $versionPosition == "bottom" )##
@@ -1754,7 +1754,7 @@
 	*##if ( $localResources )##
 	<script src="$resourcePath/js/jquery.min.js"></script>
 #*	*##else##
-	<script src="$protocol//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="$protocol//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 #*	*##end##
 
 	<script src="$bootstrapJsPath/bootstrap.min.js"></script>

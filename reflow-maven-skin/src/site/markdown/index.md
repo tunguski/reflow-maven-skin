@@ -8,7 +8,7 @@ To use this Maven skin, include it in your [`site.xml` site descriptor][site-xml
 <project>
   ...
   <skin>
-    <groupId>lt.velykis.maven.skins</groupId>
+    <groupId>pl.matsuo.maven.skins</groupId>
     <artifactId>reflow-maven-skin</artifactId>
     <version>1.1.1</version>
   </skin>
@@ -38,7 +38,7 @@ Add [`reflow-velocity-tools`][reflow-tools] dependency to `maven-site-plugin` in
       <dependencies>
         ...
         <dependency>
-          <groupId>lt.velykis.maven.skins</groupId>
+          <groupId>pl.matsuo.maven.skins</groupId>
           <artifactId>reflow-velocity-tools</artifactId>
           <version>1.1.1</version>
         </dependency>
