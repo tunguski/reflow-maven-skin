@@ -1483,10 +1483,10 @@
 		<div class="navbar navbar-default navbar-fixed-top#if ( $config.is( "navbarInverse" ) ) navbar-inverse#end">
 			<div class="">
 				<div class="container">
-					<a class="btn navbar-btn" data-toggle="collapse" data-target="#top-nav-collapse">
-						<span class="glyphicon glyphicon-bar"></span>
-						<span class="glyphicon glyphicon-bar"></span>
-						<span class="glyphicon glyphicon-bar"></span>
+					<a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</a>
 #*
 
@@ -1509,7 +1509,7 @@
 
 *###
 					<div class="collapse navbar-collapse" id="top-nav-collapse">
-						<ul class="nav pull-right">
+						<ul class="nav navbar-nav navbar-right">
 #*
 
 	*##if ( $decoration.body.links )#*
@@ -1625,13 +1625,13 @@
 		<div id="toc-bar" class="navbar navbar-default" data-spy="affix" data-offset-top="$tocOffsetTop">
 			<div class="">
 				<div id="toc-scroll-target" class="container">
-					<a class="btn navbar-btn" data-toggle="collapse" data-target="#toc-nav-collapse">
-						<span class="glyphicon glyphicon-bar"></span>
-						<span class="glyphicon glyphicon-bar"></span>
-						<span class="glyphicon glyphicon-bar"></span>
+					<a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toc-nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</a>
 					<div class="collapse navbar-collapse" id="toc-nav-collapse">
-						<ul id="toc" class="nav">
+						<ul id="toc" class="nav navbar-nav">
 #*							// display Table of Contents in a top bar
 							*##topToc ( $tocItems )
 						</ul>
