@@ -97,3 +97,14 @@ footer.well p,
 .subfooter {
   padding: 30px 0;
 }
+
+.carousel-caption {
+  width: 100%;
+  opacity: 0.7;
+  background-color: black;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  padding-top: 0;
+}
