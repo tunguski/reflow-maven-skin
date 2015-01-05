@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   
   <parent>
@@ -23,7 +25,7 @@
   </modules>
 
   <properties>
-    <site.url>http://tunguski.github.io/msb3-maven-skin</site.url>
+    <site.url>https://tunguski.github.io/msb3-maven-skin</site.url>
     <github.global.server>github</github.global.server>
     <site.deploy.id>gh-pages</site.deploy.id>
     <site.deploy.url />
@@ -37,12 +39,13 @@
   <scm>
     <connection>scm:git:git@github.com:tunguski/msb3-maven-skin.git</connection>
     <developerConnection>scm:git:git@github.com:tunguski/msb3-maven-skin.git</developerConnection>
-    <url>http://github.com/tunguski/msb3-maven-skin/tree/master</url>
+    <url>https://github.com/tunguski/msb3-maven-skin/tree/master</url>
     <tag>HEAD</tag>
   </scm>
+
   <issueManagement>
     <system>GitHub</system>
-    <url>http://github.com/tunguski/msb3-maven-skin/issues</url>
+    <url>https://github.com/tunguski/msb3-maven-skin/issues</url>
   </issueManagement>
 
   <licenses>
@@ -131,7 +134,7 @@
                <groupId>org.apache.maven.scm</groupId>
                <artifactId>maven-scm-provider-gitexe</artifactId>
                <!-- This version is necessary for use with git version 1.8.5 -->
-               <version>1.8.1</version>
+               <version>1.9.2</version>
             </dependency>
          </dependencies>
       </plugin>
@@ -217,7 +220,7 @@
     <profile>
       <id>stage</id>
       <properties>
-        <site.deploy.url>http://github.com/tunguski/msb3-maven-skin/tree/gh-pages/</site.deploy.url>
+        <site.deploy.url>https://github.com/tunguski/msb3-maven-skin/tree/gh-pages/</site.deploy.url>
       </properties>
 
       <build>
