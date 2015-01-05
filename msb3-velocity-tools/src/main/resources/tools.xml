@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Add custom tools to Velocity tools. The tools.xml file is included in the classpath and Velocity finds it. -->
+<tools>
+  <toolbox scope="application">
+    <tool key="config"
+          class="pl.matsuo.maven.skins.msb3.SkinConfigTool"/>
+    <tool key="htmlTool"
+          class="pl.matsuo.maven.skins.msb3.HtmlTool"/>
+    <tool key="uriTool"
+          class="pl.matsuo.maven.skins.msb3.URITool"/>
+  </toolbox>
+</tools>

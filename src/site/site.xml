@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Reflow Maven Skin"
+<project name="Msb3 Maven Skin"
   xmlns="http://maven.apache.org/DECORATION/1.3.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
 
   <bannerLeft>
-    <!-- Reflow Maven Skin, but with "Reflow" highlighted -->
+    <!-- Msb3 Maven Skin, but with "Msb3" highlighted -->
     <name><![CDATA[
-      <span class="color-highlight">Reflow</span> Maven Skin
+      <span class="color-highlight">Msb3</span> Maven Skin
       ]]>
     </name>
-    <href>http://andriusvelykis.github.io/reflow-maven-skin</href>
+    <href>http://tunguski.github.io/msb3-maven-skin</href>
   </bannerLeft>
   
   <publishDate position="bottom" format="yyyy-MM-dd" />
@@ -19,28 +19,28 @@
 
   <skin>
     <groupId>pl.matsuo.maven.skins</groupId>
-    <artifactId>reflow-maven-skin</artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <artifactId>msb3-maven-skin</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
   </skin>
   <custom>
-    <reflowSkin>
+    <msb3Skin>
       <!-- Make this to 'false' for local development, i.e. file:// URLs -->
       <protocolRelativeURLs>false</protocolRelativeURLs>
       <smoothScroll>true</smoothScroll>
       <theme>default</theme>
       <highlightJs>true</highlightJs>
       <highlightJsTheme>github</highlightJsTheme>
-      <absoluteResourceURL>http://andriusvelykis.github.io/reflow-maven-skin/</absoluteResourceURL>
+      <absoluteResourceURL>http://tunguski.github.io/msb3-maven-skin/</absoluteResourceURL>
       <brand>
         <!-- Brand text in top-left part of the site -->
         <name>
           <![CDATA[
-          <span class="color-highlight">Reflow</span> Maven Skin
+          <span class="color-highlight">Msb3</span> Maven Skin
           ]]>
         </name>
-        <href>http://andriusvelykis.github.io/reflow-maven-skin</href>
+        <href>http://tunguski.github.io/msb3-maven-skin</href>
       </brand>
-      <slogan>Responsive Apache Maven skin to reflow the standard Maven site with a modern feel</slogan>
+      <slogan>Responsive Apache Maven skin to msb3 the standard Maven site with a modern feel</slogan>
       <titleTemplate>%2$s | %1$s</titleTemplate>
       <!-- Use Table of Contents at the top of the page (max 6 elements) -->
       <toc>top</toc>
@@ -56,16 +56,16 @@
       </bottomNav>
       <bottomDescription>
         <![CDATA[
-          <span class="color-highlight">Reflow</span> is an Apache Maven site skin built on 
-          <a href="http://getbootstrap.com" title="Bootstrap">Bootstrap</a>.
+          <span class="color-highlight">Msb3</span> is an Apache Maven site skin built on
+          <a href="http://getbootstrap.com" title="Bootstrap">Bootstrap 3.3</a>.
           It allows various structural and stylistic customizations to create a
           modern-looking Maven-generated website.
         ]]>
       </bottomDescription>
       <pages>
-        <index project="reflow-parent">
+        <index project="msb3-parent">
           <!-- Override the title -->
-          <titleTemplate>Reflow Maven Skin</titleTemplate>
+          <titleTemplate>Msb3 Maven Skin</titleTemplate>
           <!-- no breadcrumbs on the main index page -->
           <breadcrumbs>false</breadcrumbs>
           <!-- no ToC on the main index page -->
@@ -104,7 +104,7 @@
           <tocTopMax>4</tocTopMax>
         </dependencies>
       </pages>
-    </reflowSkin>
+    </msb3Skin>
   </custom>
 
   <body>
@@ -115,17 +115,17 @@
   
     <links>
       <item name="Download" href="skin/index.html#Usage" />
-      <item name="GitHub project" href="http://github.com/andriusvelykis/reflow-maven-skin/" />
+      <item name="GitHub project" href="http://github.com/tunguski/msb3-maven-skin/" />
     </links>
 
     <breadcrumbs>
-      <item name="Reflow" href="/" />
+      <item name="Msb3" href="/" />
     </breadcrumbs>
   
     <menu name="Main" inherit="top">
       <item name="Home" href="./" />
-      <item name="GitHub project" href="http://github.com/andriusvelykis/reflow-maven-skin/" />
-      <item name="Blog" href="http://andrius.velykis.lt/tag/reflow-maven-skin/" />
+      <item name="GitHub project" href="http://github.com/tunguski/msb3-maven-skin/" />
+      <item name="Blog" href="http://andrius.velykis.lt/tag/msb3-maven-skin/" />
       <item name="Release notes" href="release-notes.html" />
     </menu>
     <menu name="Download" inherit="top">
@@ -143,13 +143,13 @@
       <item name="Local resources" href="skin/resources.html" />
     </menu>
     <menu name="Tools" inherit="bottom">
-      <item name="Reflow Velocity tools" href="reflow-velocity-tools/" />
-      <item name="Tools Javadoc" href="reflow-velocity-tools/apidocs/" />
+      <item name="Msb3 Velocity tools" href="msb3-velocity-tools/" />
+      <item name="Tools Javadoc" href="msb3-velocity-tools/apidocs/" />
     </menu>
     <menu name="Contribute" inherit="bottom">
       <item name="Contribute" href="contribute.html" />
-      <item name="Issues" href="http://github.com/andriusvelykis/reflow-maven-skin/issues/" />
-      <item name="Fork on GitHub" href="http://github.com/andriusvelykis/reflow-maven-skin/" />
+      <item name="Issues" href="http://github.com/tunguski/msb3-maven-skin/issues/" />
+      <item name="Fork on GitHub" href="http://github.com/tunguski/msb3-maven-skin/" />
       <item name="Donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=QWKNRFZH52828" />
     </menu>
     <menu name="Maven documentation" ref="reports" inherit="bottom"/>

@@ -1,10 +1,10 @@
-# [Reflow Maven skin]( http://andriusvelykis.github.io/reflow-maven-skin/ )
+# [Msb3 Maven skin]( http://tunguski.github.io/msb3-maven-skin/ )
 
-Reflow is an Apache Maven site skin built on [Bootstrap][bootstrap]. It allows various structural
+Msb3 is an Apache Maven site skin built on [Bootstrap 3.3][bootstrap]. It allows various structural
 and stylistic customizations to create a modern-looking Maven-generated website.
 
 To get started and see how the skin looks by default, check out
-http://andriusvelykis.github.io/reflow-maven-skin!
+http://tunguski.github.io/msb3-maven-skin!
 
 [bootstrap]: http://getbootstrap.com
 
@@ -17,14 +17,14 @@ To use this Maven skin, include it in your `site.xml` file:
   ...
   <skin>
     <groupId>pl.matsuo.maven.skins</groupId>
-    <artifactId>reflow-maven-skin</artifactId>
+    <artifactId>msb3-maven-skin</artifactId>
     <version>1.1.1</version>
   </skin>
   ...
 </project>
 ```
 
-The skin requires accompanying Reflow Velocity tools (`reflow-velocity-tools`) to be available when
+The skin requires accompanying Msb3 Velocity tools (`msb3-velocity-tools`) to be available when
 generating Maven site. Add them as a dependency to `maven-site-plugin` in your POM file:
 
 ```xml
@@ -39,10 +39,10 @@ generating Maven site. Add them as a dependency to `maven-site-plugin` in your P
         ...
         <dependency>
           <groupId>pl.matsuo.maven.skins</groupId>
-          <artifactId>reflow-velocity-tools</artifactId>
+          <artifactId>msb3-velocity-tools</artifactId>
           <version>1.1.1</version>
         </dependency>
-        <!-- Reflow skin requires Velocity >= 1.7  -->
+        <!-- Msb3 skin requires Velocity >= 1.7  -->
         <dependency>
           <groupId>org.apache.velocity</groupId>
           <artifactId>velocity</artifactId>
@@ -66,10 +66,10 @@ on using the skin with Maven 2 site or other configurations.
 
 ### Configuration
 
-The skin is configurable using the `<custom><reflowSkin>` element in your `site.xml` file.
-Refer to [documentation][reflow-config] for all configuration options.
+The skin is configurable using the `<custom><msb3Skin>` element in your `site.xml` file.
+Refer to [documentation][msb3-config] for all configuration options.
 
-[reflow-config]: http://andriusvelykis.github.io/reflow-maven-skin/skin/config.html
+[msb3-config]: http://tunguski.github.io/msb3-maven-skin/skin/config.html
 
 A sample configuration file is given below:
 
@@ -77,11 +77,11 @@ A sample configuration file is given below:
 <project>
   ...
   <custom>
-    <reflowSkin>
+    <msb3Skin>
       <theme>bootswatch-spacelab</theme>
       <brand>
         <name>My Project</name>
-        <href>http://andriusvelykis.github.io/reflow-maven-skin/</href>
+        <href>http://tunguski.github.io/msb3-maven-skin/</href>
       </brand>
       <slogan>Super interesting project doing good things.</slogan>
       <titleTemplate>%2$s | %1$s</titleTemplate>
@@ -111,7 +111,7 @@ A sample configuration file is given below:
           <toc>sidebar</toc>
         </developer-info>
       </pages>
-    </reflowSkin>
+    </msb3Skin>
   </custom>
   ...
 </project>
@@ -124,7 +124,7 @@ A sample configuration file is given below:
 Have a bug or a feature request? Please create an issue here on GitHub that conforms with
 [necolas's guidelines](http://github.com/necolas/issue-guidelines).
 
-http://github.com/andriusvelykis/reflow-maven-skin/issues
+http://github.com/tunguski/msb3-maven-skin/issues
 
 
 ## Contributing
@@ -134,16 +134,16 @@ Fork the repository and submit pull requests.
 
 ## Author
 
-**Andrius Velykis**
+**Marek Romanowski**
 
 + http://andrius.velykis.lt
-+ http://github.com/andriusvelykis
++ http://github.com/tunguski
 
 
 
 ## Copyright and license
 
-Copyright 2012-2013 Andrius Velykis
+Copyright 2012-2013 Marek Romanowski
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.

@@ -9,40 +9,40 @@
   </parent>
 
   <groupId>pl.matsuo.maven.skins</groupId>
-  <artifactId>reflow-parent</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>msb3-parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Reflow Maven Skin Parent</name>
-  <description>Reflow Maven skin and supporting libraries parent</description>
+  <name>Msb3 Maven Skin Parent</name>
+  <description>Msb3 Maven skin and supporting libraries parent</description>
   <inceptionYear>2012</inceptionYear>
   
   <modules>
-    <module>reflow-velocity-tools</module>
-    <module>reflow-maven-skin</module>
+    <module>msb3-velocity-tools</module>
+    <module>msb3-maven-skin</module>
   </modules>
 
   <properties>
-    <site.url>http://andriusvelykis.github.io/reflow-maven-skin</site.url>
+    <site.url>http://tunguski.github.io/msb3-maven-skin</site.url>
     <github.global.server>github</github.global.server>
     <site.deploy.id>gh-pages</site.deploy.id>
     <site.deploy.url />
 
-    <repositoryName>reflow-maven-skin</repositoryName>
-    <repositoryOwner>andriusvelykis</repositoryOwner>
+    <repositoryName>msb3-maven-skin</repositoryName>
+    <repositoryOwner>tunguski</repositoryOwner>
   </properties>
 
   <url>${site.url}</url>
 
   <scm>
-    <connection>scm:git:git@github.com:andriusvelykis/reflow-maven-skin.git</connection>
-    <developerConnection>scm:git:git@github.com:andriusvelykis/reflow-maven-skin.git</developerConnection>
-    <url>http://github.com/andriusvelykis/reflow-maven-skin/tree/master</url>
+    <connection>scm:git:git@github.com:tunguski/msb3-maven-skin.git</connection>
+    <developerConnection>scm:git:git@github.com:tunguski/msb3-maven-skin.git</developerConnection>
+    <url>http://github.com/tunguski/msb3-maven-skin/tree/master</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
-    <url>http://github.com/andriusvelykis/reflow-maven-skin/issues</url>
+    <url>http://github.com/tunguski/msb3-maven-skin/issues</url>
   </issueManagement>
 
   <licenses>
@@ -54,14 +54,14 @@
   </licenses>
 
   <organization>
-    <name>Andrius Velykis</name>
+    <name>Marek Romanowski</name>
     <url>http://andrius.velykis.lt</url>
   </organization>
 
   <developers>
     <developer>
-      <id>andriusvelykis</id>
-      <name>Andrius Velykis</name>
+      <id>tunguski</id>
+      <name>Marek Romanowski</name>
       <timezone>0</timezone>
       <url>http://andrius.velykis.lt</url>
     </developer>
@@ -69,7 +69,7 @@
 
   <build>
     <plugins>
-      <!-- Configure Maven site plugin for Reflow skin and Markdown support -->
+      <!-- Configure Maven site plugin for Msb3 skin and Markdown support -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
@@ -77,11 +77,11 @@
         <dependencies>
           <dependency>
             <groupId>pl.matsuo.maven.skins</groupId>
-            <artifactId>reflow-velocity-tools</artifactId>
-            <version>1.1.2-SNAPSHOT</version>
+            <artifactId>msb3-velocity-tools</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
           </dependency>
           <dependency>
-            <!-- Reflow skin requires velocity 1.7 -->
+            <!-- Msb3 skin requires velocity 1.7 -->
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>1.7</version>
@@ -159,8 +159,8 @@
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>2.7</version>
         <configuration>
-          <anonymousConnection>scm:git:git@github.com:andriusvelykis/reflow-maven-skin.git</anonymousConnection>
-          <developerConnection>scm:git:git@github.com:andriusvelykis/reflow-maven-skin.git</developerConnection>
+          <anonymousConnection>scm:git:git@github.com:tunguski/msb3-maven-skin.git</anonymousConnection>
+          <developerConnection>scm:git:git@github.com:tunguski/msb3-maven-skin.git</developerConnection>
         </configuration>
         <reportSets>
           <reportSet>
@@ -217,7 +217,7 @@
     <profile>
       <id>stage</id>
       <properties>
-        <site.deploy.url>http://github.com/andriusvelykis/reflow-maven-skin/tree/gh-pages/</site.deploy.url>
+        <site.deploy.url>http://github.com/tunguski/msb3-maven-skin/tree/gh-pages/</site.deploy.url>
       </properties>
 
       <build>
