@@ -6,7 +6,6 @@
     <groupId>pl.matsuo.maven.skins</groupId>
     <artifactId>msb3-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>msb3-maven-skin</artifactId>
