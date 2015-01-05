@@ -31,20 +31,20 @@ h3, h4, h5, h6 {
 }
 
 /* A bit of workaround for links being not clickable due to :before element in headings */
-.project-reflow-parent.page-index h2[id]:before {
+.project-msb3-parent.page-index h2[id]:before {
   height: 30px;
   margin-top: -30px;
 }
 
-.project-reflow-parent.page-index .sidebar {
+.project-msb3-parent.page-index .sidebar {
   margin-top: 10px;
 }
 
-.project-reflow-parent.page-index .sidebar {
+.project-msb3-parent.page-index .sidebar {
   margin-top: 10px;
 }
 
-.project-reflow-parent.page-index .sidebar h3 {
+.project-msb3-parent.page-index .sidebar h3 {
   margin-top: 10px;
 }
 
