@@ -1,57 +1,18 @@
 # Release notes
 
-The history of Msb3 Maven skin releases is documented below. For details of changes refer to the [project's GitHub issues][msb3-issues] or the [GitHub report][github-report].
+The history of Msb3 Maven skin releases is documented below. For details of changes refer to the
+[project's GitHub issues][msb3-issues] or the [GitHub report][github-report].
 
 [msb3-issues]: http://github.com/tunguski/msb3-maven-skin/issues?state=closed
 [github-report]: github-report.html
 
 
-## 1.1.1 / 2014-06-22
-
-### Bug fixes
-
--   Image previews (lightbox) don't work anymore ([#35][])
--   Smooth scrolling does not work ([#36][])
-
-See [all GitHub issues for 1.1.1][msb3-issues-111] for further details.
-
-[#35]: http://github.com/tunguski/msb3-maven-skin/issues/35
-[#36]: http://github.com/tunguski/msb3-maven-skin/issues/36
-
-[msb3-issues-111]: http://github.com/tunguski/msb3-maven-skin/issues?milestone=2&amp;state=closed
-
-
-## 1.1.0 / 2014-02-17
+## 1.0.0 / 2015-??-??
 
 ### Major enhancements
 
--   Support for custom/local resources (vs. hardcoded CDN-based jQuery and Bootstrap), which enables use of Msb3 skin in a local/intranet setting ([#24][])
+-   Bootstrap 3.3
 
 ### Minor enhancements
 
--   Upgraded to Bootstrap 2.3 ([#9][])
--   Bumped versions of other skin components (e.g. [#22][])
-
 ### Bug fixes
-
--   Fixed ToC snapping when banner is not available/is of custom size ([#1][])
--   NPE when menu item href is not set ([#8][])
--   Other various fixes (see [GitHub issues][msb3-issues-110])
-
-See [all GitHub issues for 1.1.0][msb3-issues-110] for further details.
-
-[#1]: http://github.com/tunguski/msb3-maven-skin/issues/1
-[#8]: http://github.com/tunguski/msb3-maven-skin/issues/8
-[#9]: http://github.com/tunguski/msb3-maven-skin/issues/9
-[#22]: http://github.com/tunguski/msb3-maven-skin/issues/22
-[#24]: http://github.com/tunguski/msb3-maven-skin/issues/24
-
-[msb3-issues-110]: http://github.com/tunguski/msb3-maven-skin/issues?milestone=1&amp;state=closed
-
-
-## 1.0.0 / 2013-01-15
-
--   Initial release of Msb3 Maven skin and Msb3 Velocity tools.
-
-
-
