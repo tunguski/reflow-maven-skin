@@ -18,6 +18,18 @@ $(window).load(function(){
          // (default click behaviour)
          window.location.hash = hash;
        });
+  });
 
+  $('.navbar-static-top')
+      .clone()
+      .removeClass( "navbar-static-top" )
+      .addClass( "navbar-fixed-top" )
+      .insertAfter('.navbar-static-top');
+
+  //$('#toc-bar').data('offset-top', $('#toc-bar').offset().top);
+  $('#toc-bar').affix({
+    offset: {
+      top: $('#toc-bar').offset().top
+    }
   });
 });

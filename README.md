@@ -136,7 +136,7 @@ Fork the repository and submit pull requests.
 
 **Marek Romanowski**
 
-+ http://andrius.velykis.lt
++ http://blog.matsuo.pl
 + http://github.com/tunguski
 
 

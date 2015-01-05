@@ -44,7 +44,7 @@ page listing skin user sites.
 If you _really really_ like the skin and want to support the author, I will be glad to
 [accept a small donation][donate].
 
-[av-site]: http://andrius.velykis.lt
+[av-site]: http://blog.matsuo.pl
 [donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QWKNRFZH52828
 
 

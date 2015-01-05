@@ -1487,7 +1487,7 @@
 ##	// put page and project slugs as classes to the <body>. This allows page-specific CSS customizations.
 	<body class="page-$config.fileId project-$config.projectId" data-spy="scroll" data-offset="60" data-target="${esc.h}toc-scroll-target">
 
-		<div class="navbar navbar-default navbar-fixed-top#if ( $config.is( "navbarInverse" ) ) navbar-inverse#end">
+		<header class="navbar navbar-default navbar-static-top#if ( $config.is( "navbarInverse" ) ) navbar-inverse#end">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-collapse">
@@ -1540,7 +1540,7 @@
 						</ul>
 					</div><!--/.nav-collapse -->
 			</div>
-		</div>
+		</header>
 
 	<div class="container">
 
@@ -1741,7 +1741,7 @@
 #*	*##end#*
 
 #*	*##if ( !$config.not("skinAttribution") )##
-				<p><a href="http://github.com/tunguski/msb3-maven-skin" title="Msb3 Maven skin">Msb3 Maven skin</a> by <a href="http://andrius.velykis.lt" target="_blank" title="Marek Romanowski">Marek Romanowski</a>.</p>
+				<p><a href="http://github.com/tunguski/msb3-maven-skin" title="Msb3 Maven skin">Msb3 Maven skin</a> by <a href="http://matsuo.pl" target="_blank" title="Marek Romanowski">Marek Romanowski</a>.</p>
 #*	*##end#*
 
 

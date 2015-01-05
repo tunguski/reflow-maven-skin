@@ -125,7 +125,7 @@
     <menu name="Main" inherit="top">
       <item name="Home" href="./" />
       <item name="GitHub project" href="http://github.com/tunguski/msb3-maven-skin/" />
-      <item name="Blog" href="http://andrius.velykis.lt/tag/msb3-maven-skin/" />
+      <item name="Blog" href="http://blog.matsuo.pl/tag/msb3-maven-skin/" />
       <item name="Release notes" href="release-notes.html" />
     </menu>
     <menu name="Download" inherit="top">
