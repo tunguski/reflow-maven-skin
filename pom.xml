@@ -15,7 +15,7 @@
 
   <name>Msb3 Maven Skin Parent</name>
   <description>Msb3 Maven skin and supporting libraries parent</description>
-  <inceptionYear>2012</inceptionYear>
+  <inceptionYear>2015</inceptionYear>
   
   <modules>
     <module>msb3-velocity-tools</module>
