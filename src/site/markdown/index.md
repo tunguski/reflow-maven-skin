@@ -137,7 +137,7 @@ To enable these tools for any skin, add `msb3-velocity-tools` dependency to
 
 ### About
 
-Msb3 Maven skin is an [Apache Maven site][mvn-site] skin built on [Bootstrap][bootstrap].
+Msb3 Maven skin is an [Apache Maven site][mvn-site] skin built on [Bootstrap 3.3][bootstrap].
 
 The code is [open source][msb3-github] and licensed under [Apache license][apache-license].
 The skin can be used freely for your Maven projects.
