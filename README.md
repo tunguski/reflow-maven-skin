@@ -143,7 +143,7 @@ Fork the repository and submit pull requests.
 
 ## Copyright and license
 
-Copyright 2012-2013 Marek Romanowski
+Copyright 2015 Marek Romanowski
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
