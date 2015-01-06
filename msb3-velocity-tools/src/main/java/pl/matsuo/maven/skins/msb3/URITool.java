@@ -23,7 +23,7 @@ import org.apache.velocity.tools.config.DefaultKey;
 /**
  * An Apache Velocity tool that provides utility methods to work with URIs/URLs and links.
  * 
- * @author Marek Romanowski
+ * @author Andrius Velykis
  * @since 1.0
  */
 @DefaultKey("uriTool")

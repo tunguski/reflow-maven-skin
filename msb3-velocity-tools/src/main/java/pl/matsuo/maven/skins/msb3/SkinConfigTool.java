@@ -67,7 +67,7 @@ import org.codehaus.plexus.util.xml.Xpp3Dom;
  * Note
  * </p>
  * 
- * @author Marek Romanowski
+ * @author Andrius Velykis
  * @since 1.0
  */
 @DefaultKey("config")

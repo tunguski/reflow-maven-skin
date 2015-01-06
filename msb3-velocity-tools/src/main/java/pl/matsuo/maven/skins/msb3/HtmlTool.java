@@ -49,7 +49,7 @@ import org.jsoup.parser.Tag;
  * selectors</a> to refer to specific elements for manipulation.
  * </p>
  * 
- * @author Marek Romanowski
+ * @author Andrius Velykis
  * @since 1.0
  * @see <a href="http://jsoup.org/">jsoup HTML parser</a>
  * @see <a href="http://jsoup.org/cookbook/extracting-data/selector-syntax">jsoup CSS selectors</a>
