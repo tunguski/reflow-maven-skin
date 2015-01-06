@@ -63,7 +63,7 @@ HTML rewriting with [jsoup][jsoup].
 
 Some artwork resources from [MediaLoot][medialoot].
 
-Inspired by [Maven Fluido Skin][fluido].
+Based on [Reflow Maven Skin][reflow]. Inspired by [Maven Fluido Skin][fluido].
 
 [bootstrap]: http://getbootstrap.com/
 [bootswatch]: http://bootswatch.com/
@@ -75,6 +75,7 @@ Inspired by [Maven Fluido Skin][fluido].
 [jsoup]: http://jsoup.org/
 [medialoot]: http://medialoot.com/
 [fluido]: http://maven.apache.org/skins/maven-fluido-skin/
+[reflow]: http://andriusvelykis.github.io/reflow-maven-skin/
 
 
 ## Copyright and license
