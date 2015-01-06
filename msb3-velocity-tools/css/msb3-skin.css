@@ -3,6 +3,18 @@ body {
   padding-top: 50px;
 }
 
+#toc-nav-collapse {
+  padding: 0;
+}
+
+footer li a {
+  float: none;
+  margin-bottom: 0;
+}
+
+footer blockquote a {
+  padding: 0;
+}
 
 /* Fixed subnav support: */
 
@@ -53,6 +65,7 @@ body {
     z-index:1020;
     margin-bottom: 20px;
   }
+
 
 }
 
