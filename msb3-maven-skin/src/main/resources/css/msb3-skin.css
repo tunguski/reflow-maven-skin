@@ -130,3 +130,14 @@ footer.well p,
   padding: 10px;
   padding-top: 0;
 }
+
+@media (max-width: 767px) {
+  ul#toc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #toc-nav-collapse {
+    border-top-width: 0;
+  }
+}
