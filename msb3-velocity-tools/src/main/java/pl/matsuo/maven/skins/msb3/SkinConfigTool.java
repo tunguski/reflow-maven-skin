@@ -15,8 +15,6 @@
  */
 package pl.matsuo.maven.skins.msb3;
 
-import pl.matsuo.maven.skins.msb3.HtmlTool;
-
 import org.apache.maven.doxia.site.decoration.DecorationModel;
 import org.apache.maven.project.MavenProject;
 import org.apache.velocity.tools.ToolContext;

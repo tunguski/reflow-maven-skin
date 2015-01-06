@@ -15,6 +15,16 @@
  */
 package pl.matsuo.maven.skins.msb3;
 
+import org.apache.velocity.tools.ToolContext;
+import org.apache.velocity.tools.config.DefaultKey;
+import org.apache.velocity.tools.generic.SafeConfig;
+import org.apache.velocity.tools.generic.ValueParser;
+import org.jsoup.Jsoup;
+import org.jsoup.helper.StringUtil;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.parser.Tag;
+
 import java.text.Normalizer;
 import java.text.Normalizer.Form;
 import java.util.ArrayList;
@@ -30,16 +40,6 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Stack;
 import java.util.regex.Pattern;
-
-import org.apache.velocity.tools.ToolContext;
-import org.apache.velocity.tools.config.DefaultKey;
-import org.apache.velocity.tools.generic.SafeConfig;
-import org.apache.velocity.tools.generic.ValueParser;
-import org.jsoup.Jsoup;
-import org.jsoup.helper.StringUtil;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.parser.Tag;
 
 /**
  * An Apache Velocity tool that provides utility methods to manipulate HTML code using

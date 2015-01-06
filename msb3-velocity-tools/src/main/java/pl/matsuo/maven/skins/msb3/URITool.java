@@ -15,10 +15,10 @@
  */
 package pl.matsuo.maven.skins.msb3;
 
-import java.net.URI;
-
 import org.apache.maven.doxia.site.decoration.inheritance.URIPathDescriptor;
 import org.apache.velocity.tools.config.DefaultKey;
+
+import java.net.URI;
 
 /**
  * An Apache Velocity tool that provides utility methods to work with URIs/URLs and links.
