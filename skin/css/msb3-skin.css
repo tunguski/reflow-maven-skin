@@ -7,12 +7,12 @@ body {
   padding: 0;
 }
 
-footer li {
+footer.well li {
   float: none;
   margin-bottom: 0;
 }
 
-footer blockquote a {
+footer.well blockquote a {
   padding: 0;
 }
 
