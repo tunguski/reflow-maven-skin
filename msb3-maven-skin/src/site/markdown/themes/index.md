@@ -70,6 +70,83 @@ There are several options for the `<theme>` value:
 [theme-cerulean]: bootswatch-cerulean.html
 
 
+### [Cosmo][theme-cosmo]
+
+[![Cosmo Bootswatch theme](../img/bootswatch-cosmo.png)][theme-cosmo]
+
+```xml
+<theme>bootswatch-cosmo</theme>
+```
+
+[theme-cosmo]: bootswatch-cosmo.html
+
+
+### [Cyborg][theme-cyborg]
+
+[![Cyborg Bootswatch theme](../img/bootswatch-cyborg.png)][theme-cyborg]
+
+```xml
+<theme>bootswatch-cyborg</theme>
+```
+
+[theme-cyborg]: bootswatch-cyborg.html
+
+
+### [Darkly][theme-darkly]
+
+[![Darkly Bootswatch theme](../img/bootswatch-darkly.png)][theme-darkly]
+
+```xml
+<theme>bootswatch-darkly</theme>
+```
+
+[theme-darkly]: bootswatch-darkly.html
+
+
+### [Flatly][theme-flatly]
+
+[![Flatly Bootswatch theme](../img/bootswatch-flatly.png)][theme-flatly]
+
+```xml
+<theme>bootswatch-flatly</theme>
+```
+
+[theme-flatly]: bootswatch-flatly.html
+
+
+### [Journal][theme-journal]
+
+[![Journal Bootswatch theme](../img/bootswatch-journal.png)][theme-journal]
+
+```xml
+<theme>bootswatch-journal</theme>
+```
+
+[theme-journal]: bootswatch-journal.html
+
+
+### [Lumen][theme-lumen]
+
+[![Lumen Bootswatch theme](../img/bootswatch-lumen.png)][theme-lumen]
+
+```xml
+<theme>bootswatch-lumen</theme>
+```
+
+[theme-lumen]: bootswatch-lumen.html
+
+
+### [Paper][theme-paper]
+
+[![Paper Bootswatch theme](../img/bootswatch-paper.png)][theme-paper]
+
+```xml
+<theme>bootswatch-paper</theme>
+```
+
+[theme-paper]: bootswatch-paper.html
+
+
 ### [Readable][theme-readable]
 
 [![Readable Bootswatch theme](../img/bootswatch-readable.png)][theme-readable]
@@ -80,6 +157,38 @@ There are several options for the `<theme>` value:
 
 [theme-readable]: bootswatch-readable.html
 
+
+### [Sandstone][theme-sandstone]
+
+[![Sandstone Bootswatch theme](../img/bootswatch-sandstone.png)][theme-sandstone]
+
+```xml
+<theme>bootswatch-sandstone</theme>
+```
+
+[theme-sandstone]: bootswatch-sandstone.html
+
+
+### [Simplex][theme-simplex]
+
+[![Simplex Bootswatch theme](../img/bootswatch-simplex.png)][theme-simplex]
+
+```xml
+<theme>bootswatch-simplex</theme>
+```
+
+[theme-simplex]: bootswatch-simplex.html
+
+
+### [Slate][theme-slate]
+
+[![Slate Bootswatch theme](../img/bootswatch-slate.png)][theme-slate]
+
+```xml
+<theme>bootswatch-slate</theme>
+```
+
+[theme-slate]: bootswatch-slate.html
 
 
 ### [Spacelab][theme-spacelab]
@@ -93,17 +202,15 @@ There are several options for the `<theme>` value:
 [theme-spacelab]: bootswatch-spacelab.html
 
 
+### [Superhero][theme-superhero]
 
-### [Spruce][theme-spruce]
-
-[![Spruce Bootswatch theme](../img/bootswatch-spruce.png)][theme-spruce]
+[![Superhero Bootswatch theme](../img/bootswatch-superhero.png)][theme-superhero]
 
 ```xml
-<theme>bootswatch-spruce</theme>
+<theme>bootswatch-superhero</theme>
 ```
 
-[theme-spruce]: bootswatch-spruce.html
-
+[theme-superhero]: bootswatch-superhero.html
 
 
 ### [United][theme-united]
@@ -115,6 +222,17 @@ There are several options for the `<theme>` value:
 ```
 
 [theme-united]: bootswatch-united.html
+
+
+### [Yeti][theme-yeti]
+
+[![Yeti Bootswatch theme](../img/bootswatch-yeti.png)][theme-yeti]
+
+```xml
+<theme>bootswatch-yeti</theme>
+```
+
+[theme-yeti]: bootswatch-yeti.html
 
 
 

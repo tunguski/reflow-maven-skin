@@ -9,16 +9,28 @@ h4[id]:before,
 h5[id]:before,
 h6[id]:before,
 a[name]:before {
-    display:block; 
-    content:""; 
-    height:90px; 
-    margin:-90px 0 0; 
+  display:block;
+  content:"";
+  height:90px;
+  margin:-90px 0 0;
 }
 
-.jumbotron {
-  background-image: url('../img/subtle_orange_emboss.png');
+body {
+  padding-top: 50px;
 }
 
+#toc-nav-collapse {
+  padding: 0;
+}
+
+footer.well li {
+  float: none;
+  margin-bottom: 0;
+}
+
+footer.well blockquote a {
+  padding: 0;
+}
 
 /* Fixed subnav support: */
 
@@ -70,6 +82,7 @@ a[name]:before {
     margin-bottom: 20px;
   }
 
+
 }
 
 /* Fix for header links - do not color/underline them */
@@ -95,6 +108,7 @@ footer.well {
 
 footer.well a {
   padding: 5px;
+  padding-left: 10px;
 }
 
 footer.well p,
