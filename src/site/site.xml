@@ -15,13 +15,14 @@
   
   <publishDate position="bottom" format="yyyy-MM-dd" />
   <version position="bottom" />
-  <googleAnalyticsAccountId>UA-1402675-6</googleAnalyticsAccountId>
+  <!--<googleAnalyticsAccountId>UA-1402675-6</googleAnalyticsAccountId>-->
 
   <skin>
     <groupId>pl.matsuo.maven.skins</groupId>
     <artifactId>msb3-maven-skin</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </skin>
+
   <custom>
     <msb3Skin>
       <!-- Make this to 'false' for local development, i.e. file:// URLs -->

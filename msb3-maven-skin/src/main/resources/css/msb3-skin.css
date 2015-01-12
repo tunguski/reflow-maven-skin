@@ -116,6 +116,8 @@ footer.well p,
   margin-bottom: 0;
 }
 
+
+
 .subfooter {
   padding: 30px 0;
 }
@@ -130,6 +132,8 @@ footer.well p,
   padding: 10px;
   padding-top: 0;
 }
+
+
 
 @media (max-width: 767px) {
   ul#toc {

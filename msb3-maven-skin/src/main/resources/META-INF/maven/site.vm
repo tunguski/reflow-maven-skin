@@ -382,7 +382,6 @@
 							<ul class="dropdown-menu" role="menu">
 								<!-- Repeat the item, otherwise it is not clickable as the dropdown root -->
 								<li><a href="#$topItem.id" title="$topItem.text">$topItem.text</a></li>
-								<li class="divider"></li>
 #* 								*##topTocDropdown ( $topItem.items )
 							</ul>
 						</li>
@@ -458,7 +457,6 @@
 #*			*##end#* /foreach $subitem
 
 			*##if ( !$addedDivider )##
-				<li class="divider"></li>
 #*				*##set ( $addedDivider = true )#*
 			*##end## /foreach $subitem
 			</ul>
@@ -1577,7 +1575,6 @@
 		*##end#*
 		*##if ( $datePosition == "left" )#*
 			*##if ( $addedBefore )##
-				<li class="divider">|</li>
 #*			*##end##
 				<li class="publishDate version-date">#publishDate ()</li>
 #*			*##set ( $addedBefore = true )#*
@@ -1586,7 +1583,6 @@
 		// breadcrumbs
 		*##if ( !$config.not( "breadcrumbs" ) && $decoration.body.breadcrumbs && $decoration.body.breadcrumbs.size() > 0 )#*
 			*##if ( $addedBefore )##
-				<li class="divider">|</li>
 #*			*##end#*
 				*##breadcrumbs ( $decoration.body.breadcrumbs )
 #*		*##end#*
@@ -1599,7 +1595,6 @@
 		*##end#*
 		*##if ( $versionPosition == "right" )#*
 			*##if ( $addedBefore )##
-				<li class="divider pull-right">|</li>
 #*			*##end##
 				<li class="projectVersion version-date pull-right">#version ()</li>
 #*		*##end##
