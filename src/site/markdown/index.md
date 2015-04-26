@@ -94,7 +94,7 @@ to give an easy makeover for your Maven site.
 
 [How to select a theme &raquo;][themes]
 
-[bootstrap-custom]: http://twitter.github.com/bootstrap/customize.html
+[bootstrap-custom]: http://getbootstrap.com/customize
 [msb3-multi]: skin/multi-module.html
 
 

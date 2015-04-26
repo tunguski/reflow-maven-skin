@@ -3,7 +3,7 @@
 Msb3 skin builds on [Twitter Bootstrap][bootstrap] and supports predefined and custom
 Bootstrap themes. They are set using the `<theme>` element in the customization:
 
-[bootstrap]: http://twitter.github.com/bootstrap/
+[bootstrap]: http://getbootstrap.com/
 
 ```xml
 <custom>
@@ -52,7 +52,7 @@ There are several options for the `<theme>` value:
     or check out several examples of Msb3 skin using Bootswatch themes below.
 
 [bootstrapcdn]: http://bootstrapcdn.com
-[bootstrap-custom]: http://twitter.github.com/bootstrap/customize.html
+[bootstrap-custom]: http://getbootstrap.com/customize
 [bootswatch]: http://bootswatch.com
 [bootswatch-gallery]: http://bootswatch.com/#gallery
 

@@ -79,7 +79,7 @@ caption. For best results, aim for images of the same size, and use `h4` heading
 subsections.
 
 [carousel-msb3]: ../
-[carousel-bootstrap]: http://twitter.github.com/bootstrap/javascript.html#carousel
+[carousel-bootstrap]: http://getbootstrap.com/javascript#carousel
 
 
 ## Columns
