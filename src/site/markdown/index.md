@@ -48,7 +48,7 @@ To use Msb3 skin in your Maven site, [add it to site.xml][msb3-usage]:
 <skin>
   <groupId>pl.matsuo.maven.skins</groupId>
   <artifactId>msb3-maven-skin</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>0.1.1-SNAPSHOT</version>
 </skin>
 ```
 

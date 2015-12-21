@@ -10,7 +10,7 @@ To use this Maven skin, include it in your [`site.xml` site descriptor][site-xml
   <skin>
     <groupId>pl.matsuo.maven.skins</groupId>
     <artifactId>msb3-maven-skin</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.1.1-SNAPSHOT</version>
   </skin>
   ...
 </project>
@@ -40,7 +40,7 @@ Add [`msb3-velocity-tools`][msb3-tools] dependency to `maven-site-plugin` in the
         <dependency>
           <groupId>pl.matsuo.maven.skins</groupId>
           <artifactId>msb3-velocity-tools</artifactId>
-          <version>1.0.0-SNAPSHOT</version>
+          <version>0.1.1-SNAPSHOT</version>
         </dependency>
         <!-- Msb3 skin requires Velocity >= 1.7  -->
         <dependency>

@@ -12,7 +12,7 @@
 
   <groupId>pl.matsuo.maven.skins</groupId>
   <artifactId>msb3-parent</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Msb3 Maven Skin Parent</name>
@@ -85,7 +85,7 @@
           <dependency>
             <groupId>pl.matsuo.maven.skins</groupId>
             <artifactId>msb3-velocity-tools</artifactId>
-            <version>0.1.0</version>
+            <version>0.1.1-SNAPSHOT</version>
           </dependency>
           <dependency>
             <!-- Msb3 skin requires velocity 1.7 -->
