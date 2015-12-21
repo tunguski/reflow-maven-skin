@@ -44,7 +44,7 @@ file:
         <dependency>
           <groupId>pl.matsuo.maven.skins</groupId>
           <artifactId>msb3-velocity-tools</artifactId>
-          <version>0.1.1-SNAPSHOT</version>
+          <version>0.1.2-SNAPSHOT</version>
         </dependency>
         ...
       </dependencies>
