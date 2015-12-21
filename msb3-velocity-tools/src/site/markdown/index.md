@@ -21,9 +21,9 @@ Refer to [Javadoc][javadoc-all] for each tool for more information.
 [jsoup]: http://jsoup.org/
 
 [javadoc-all]: apidocs/
-[javadoc-config]: apidocs/lt/velykis/maven/skins/msb3/SkinConfigTool.html
-[javadoc-html]: apidocs/lt/velykis/maven/skins/msb3/HtmlTool.html
-[javadoc-uri]: apidocs/lt/velykis/maven/skins/msb3/URITool.html
+[javadoc-config]: apidocs/pl/matsuo/maven/skins/msb3/SkinConfigTool.html
+[javadoc-html]: apidocs/pl/matsuo/maven/skins/msb3/HtmlTool.html
+[javadoc-uri]: apidocs/pl/matsuo/maven/skins/msb3/URITool.html
 
 
 ## Usage
