@@ -39,9 +39,8 @@ Use at your own risk, however, as major version changes are likely to break the 
 When using `<localResources>`, the following files need to be available in the corresponding
 directories within your project's `src/site/resources` folder:
 
--   **`css/bootstrap.min.css`** - Msb3 skin currently uses Bootstrap 3.3.4
--   **`css/bootstrap-responsive.min.css`** - Bootstrap 3.3.4
--   **`js/bootstrap.min.js`** - Bootstrap 3.3.4
+-   **`css/bootstrap.min.css`** - Msb3 skin currently uses Bootstrap 3.3.6
+-   **`js/bootstrap.min.js`** - Bootstrap 3.3.6
 -   **`js/jquery.min.js`** - jQuery 1.9.1
 -   **`js/html5.js`** - HTML5 support for IE6-8, get it from [here][html5shiv].
 
@@ -52,7 +51,7 @@ these files will have to be repeated for each sub-module.
 [bootstrap-theme]: themes/
 [local-css]: #Additional_CSS_files
 [msite-702]: https://jira.codehaus.org/browse/MSITE-702
-[bootstrap-cust]: http://getbootstrap.com/3.3.4/customize.html
+[bootstrap-cust]: http://getbootstrap.com/customize/ 
 [bootswatch2]: http://bootswatch.com/2/
 [html5shiv]: http://html5shim.googlecode.com/svn/trunk/html5.js
 
@@ -76,8 +75,8 @@ add the relevant CSS and JavaScript manually:
   <body>
     ...
     <head>
-      <link rel="stylesheet" href="http://yandex.st/highlightjs/7.5/styles/default.min.css">
-      <script src="http://yandex.st/highlightjs/7.5/highlight.min.js"></script>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
     </head>
     ...
   </body>

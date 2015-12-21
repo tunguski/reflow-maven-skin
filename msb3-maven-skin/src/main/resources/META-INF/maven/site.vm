@@ -1389,8 +1389,8 @@
 		*##set ( $bootstrapCssPath = "$resourcePath/css" )#*
 		*##set ( $bootstrapJsPath = "$resourcePath/js" )#*
 	*##else#*
-		*##set ( $bootstrapVersion = "3.3.4" )#*
-		*##set ( $bootswatchVersion = "3.3.4" )#*
+		*##set ( $bootstrapVersion = "3.3.6" )#*
+		*##set ( $bootswatchVersion = "3.3.6" )#*
 
 		// use Bootstrap theme from BootstrapCDN (loaded over network)
 		*##if ( $config.theme && $config.theme.getValue().startsWith("bootswatch-") )#*
@@ -1429,7 +1429,7 @@
 	*##else#*
 		*##set ( $highlightJs = false )#*
 	*##end#*
-	*##set ( $highlightJsVersion = "7.5" )#*
+	*##set ( $highlightJsVersion = "9.0.0" )#*
 
 #*	*##if ( $highlightJs )#*
 		// get the configured theme, or use default if not explicitly specified
@@ -1439,7 +1439,7 @@
 			*##set ( $highlightJsTheme = 'default' )#*
 		*##end#*
 		// use a hosted version of highlight.js for syntax highlighting	*###
-		<link href="$protocol//yandex.st/highlightjs/$highlightJsVersion/styles/${highlightJsTheme}.min.css" rel="stylesheet" />
+		<link href="$protocol//cdnjs.cloudflare.com/ajax/libs/highlight.js/$highlightJsVersion/styles/${highlightJsTheme}.min.css" rel="stylesheet" />
 #*	*##end##
 
 #*	*##if ( !$config.not( "imgLightbox" ) )#*

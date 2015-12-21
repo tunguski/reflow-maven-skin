@@ -35,7 +35,6 @@ There are several options for the `<theme>` value:
     Bootstrap CSS and JavaScript files to be available in `src/site/resources`:
     
     -   `css/bootstrap.min.css`
-    -   `css/bootstrap-responsive.min.css`
     -   `js/bootstrap.min.js`
     
     The files can be customized and generated at [Bootstrap's Customize page][bootstrap-custom].
