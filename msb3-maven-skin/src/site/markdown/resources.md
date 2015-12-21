@@ -41,7 +41,7 @@ directories within your project's `src/site/resources` folder:
 
 -   **`css/bootstrap.min.css`** - Msb3 skin currently uses Bootstrap 3.3.6
 -   **`js/bootstrap.min.js`** - Bootstrap 3.3.6
--   **`js/jquery.min.js`** - jQuery 1.9.1
+-   **`js/jquery.min.js`** - jQuery 1.11.3
 -   **`js/html5.js`** - HTML5 support for IE6-8, get it from [here][html5shiv].
 
 For multi-module site, remember to enable [resource reuse flag][resource-reuse], otherwise
