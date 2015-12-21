@@ -1,3 +1,19 @@
+/* Jumps to in-page links (e.g. page.html#foo) do not honor fixed navbar.
+   Use pseudo element to move them down.
+   Taken from http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-B
+ */
+h1[id]:before,
+h2[id]:before,
+h3[id]:before,
+h4[id]:before,
+h5[id]:before,
+h6[id]:before,
+a[name]:before {
+  display:block;
+  content:"";
+  height:90px;
+  margin:-90px 0 0;
+}
 
 body {
   padding-top: 50px;
@@ -100,6 +116,8 @@ footer.well p,
   margin-bottom: 0;
 }
 
+
+
 .subfooter {
   padding: 30px 0;
 }
@@ -113,4 +131,17 @@ footer.well p,
   bottom: 0;
   padding: 10px;
   padding-top: 0;
+}
+
+
+
+@media (max-width: 767px) {
+  ul#toc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #toc-nav-collapse {
+    border-top-width: 0;
+  }
 }

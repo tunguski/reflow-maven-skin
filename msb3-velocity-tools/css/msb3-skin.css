@@ -116,6 +116,8 @@ footer.well p,
   margin-bottom: 0;
 }
 
+
+
 .subfooter {
   padding: 30px 0;
 }
@@ -129,4 +131,17 @@ footer.well p,
   bottom: 0;
   padding: 10px;
   padding-top: 0;
+}
+
+
+
+@media (max-width: 767px) {
+  ul#toc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #toc-nav-collapse {
+    border-top-width: 0;
+  }
 }
