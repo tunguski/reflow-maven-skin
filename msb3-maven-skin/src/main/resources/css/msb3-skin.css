@@ -11,16 +11,21 @@ h6[id]:before,
 a[name]:before {
   display:block;
   content:"";
-  height:90px;
-  margin:-90px 0 0;
+  height:112px;
+  margin:-112px 0 0;
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 51px;
 }
 
 #toc-nav-collapse {
   padding: 0;
+}
+
+body > .container > header {
+  position: relative;
+  z-index: 1;
 }
 
 footer.well li {

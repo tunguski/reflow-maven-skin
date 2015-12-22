@@ -1006,6 +1006,8 @@ public class HtmlTool extends SafeConfig {
 	 * 
 	 * @param content
 	 *            HTML content to modify
+	 * @param idSeparator
+	 *            Separator
 	 * @return HTML content with all heading elements having {@code id} attributes. If all headings
 	 *         were with IDs already, the original content is returned.
 	 * @since 1.0

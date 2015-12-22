@@ -213,7 +213,7 @@ public class SkinConfigTool extends SafeConfig {
 	 * 
 	 * @param parentNode
 	 * @param name
-	 * @return
+	 * @return value
 	 */
 	private Xpp3Dom getChild(Xpp3Dom parentNode, String name) {
 		Xpp3Dom child = parentNode.getChild(name);
@@ -227,6 +227,7 @@ public class SkinConfigTool extends SafeConfig {
 	/**
 	 * Sets the key under which this tool has been configured.
 	 * 
+	 * @param key sets key
 	 * @since 1.0
 	 */
 	protected void setKey(String key) {
@@ -239,6 +240,7 @@ public class SkinConfigTool extends SafeConfig {
 	/**
 	 * Should return the key under which this tool has been configured. The default is `config`.
 	 * 
+	 * @return key
 	 * @since 1.0
 	 */
 	public String getKey() {
